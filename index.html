@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,85 +32,470 @@
 </style>
 
 </head>
-<body class="font-marope">
-    <header class="md:container mx-auto lg:px:36 px-10">
-        <!-- navbar -->
-        <nav class="flex-1 text-white">
-            <div class="navbar bg-base-100">
-                <div class="navbar-star">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
-                      <li><a class="text-button-color">Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blog</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
+<body class="font-manrope">
+  <header class="container mx-auto lg:px-24 border-2 py-8">
+    <div class=" bg-white navbar">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li class="text-[#FF4240]"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>contact</a></li>
+            
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-4xl font-extrabold">Hockey <span class=" text-button-color">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-[#FF4240]"><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-5 flex">
+        <img class="hidden lg:block" src="Images/Frame.png" alt="">
+        <a class="btn  btn-error bg-button-color">Get Ticket</a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <!-- Banner </section> -->
+      <section class="container mx-auto border-2 lg:px-24 py-8">
+        <div class="carousel w-full relative">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" alt="">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- display text  -->
+          <div class=" mx-auto justify-center items-center absolute lg:bottom-14 lg:right-16 bg-black p-4 rounded-lg">
+            <h4 class=" text-white text-2xl font-extrabold">Meet all the heroes from the field</h4>
+            <p class="text-white text-xl font-medium">Hockey Heroes is a fun filled, vibrant after School Field Hockey Program for children of all ages</p>
+          </div>
+
+        </div>
+      </section>
+      <!-- Hockey section -->
+      <section class="container mx-auto border-2 ">
+        <div class=" text-center">
+          <h3 class="font-extrabold text-3xl text-black">Professional Hockeys Club</h3>
+          <p class="font-medium text-xl">Hockey Champions Trophy Bangladesh is organized by Bangladesh Hockey Federation <br>which is owned by Bashundhara Group</p>
+        </div>
+
+        <!-- rotate -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 text-16 my-16 space-y-9 bg-white">
+          <div class="space-y-8">
+            <div class="radial-progress -rotate-180 text-button-color" style="--value:87;" role="progressbar"><span class="font-bold text-black -rotate-180">87%</span>
+            </div>
+
+            <h3 class=" text-black font-semibold text-2xl">Prayer Facility</h3>
+            <p class="text-xl font-medium">There are 11 players on a team made up of a goalkeeper, defenders, midfielders and forwards.</p>
+
+          </div>
+          <div class="space-y-8">
+            <div class="radial-progress -rotate-180 text-[#49D293]" style="--value:95;" role="progressbar"><span class="font-bold text-black -rotate-180">95%</span>
+            </div>
+
+            <h3 class=" text-black font-semibold text-2xl">Experienced Coach</h3>
+            <p class="text-xl font-medium">Plan, implement and control pre-game preparation  communication with the team.</p>
+
+          </div>
+          <div class="space-y-8">
+            <div class="radial-progress -rotate-180 text-[#FFB546]" style="--value:90;" role="progressbar"><span class="font-bold text-black -rotate-180">90%</span>
+            </div>
+
+            <h3 class=" text-black font-semibold text-2xl">Senior Player</h3>
+            <p class="text-xl font-medium">junior hockey is a level competitive ice hockey generally for players between 16 and 21 years of age</p>
+
+          </div>
+          <div class="space-y-8">
+            <div class="radial-progress -rotate-180 text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="font-bold text-black -rotate-180">80%</span>
+            </div>
+
+            <h3 class=" text-black font-semibold text-2xl">Training Ground</h3>
+            <p class="text-xl font-medium">There are many types of hockey. Some games make the use of skates, either.</p>
+
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- program section  -->
+      <section class="container mx-auto border-2 bg-white lg:px-24">
+        <div class="bg-white text-center">
+          <h3 class="font-extrabold text-3xl text-black">Program Sections</h3>
+          <p class="font-medium text-xl pt-8 "> a game played on an ice rink by two opposing teams <br> of six skaters each who try to knock a flat round puck into the opponents</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2
+         gap-5 justify-center">
+         <div class="relative ">
+          <img src="Images/2.png" alt="">
+         </div>
+         <div class="translate-x-9 -translate-y-56  absolute">
+          <h1 class="text-3xl font-extrabold mb-5 text-white">Junior Program</h1>
+          <p class=" text-white font-medium mb-5">USA Hockey's junior program provides opportunities for <br> players ages 16-to-20 to hone and enhance their skills and is  <br> an important part of the <br> organization's overall efforts related to player development</p>
+          <button class="btn btn-error bg-button-color">Register Now!</button>
+         </div>
+         <div class="relative ">
+          <img src="Images/3.png" alt="">
+         </div>
+         <div class=" absolute translate-x-8 -translate-y-56">
+          <h1 class="text-3xl font-extrabold mb-5 text-white">Junior Program</h1>
+          <p class=" text-white font-medium mb-5">USA Hockey's junior program provides opportunities for <br> players ages 16-to-20 to hone and enhance their skills and is  <br> an important part of the <br> organization's overall efforts related to player development</p>
+          <button class="btn btn-error bg-button-color">Register Now!</button>
+         </div>
+        </div>
+
+
+        <div class="col-span-1 lg:col-span-2">
+          <div class="relative">
+              <img src="Images/4.png" alt="">
+              <div class="translate-x-9 -translate-y-60">
+                <h1 class="mb-5 text 5xl font-bold text-white">Professional Program</h1>
+                <p class="text-white mb-5">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play.</p>
+                <button class="btn btn-error bg-button-color">Register Now!</button>
+              </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+        <!-- new product -->
+        <section class="container mx-auto lg:px-24 border-2 bg-white">
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-black">Our New Products</h2>
+            <p class="text-black">Sports equipment, sporting equipment, also called sporting goods,  <br>are the tools, materials, apparel, and gear used to compete in a sport <br> and varies depending on the sport</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-1 my-20 gap-5">
+            <div class="flex items-center flex-col lg:flex-row gap-5">
+              <div>
+                <img src="Images/5.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <div class="flex gap-4">
+                  <div class=" items-center flex gap-2">
+                    <img class="text-[#F99808]" src="Images/Frame (1).png" alt="">
+                    <p>5.0</p>
                   </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold">Hockey’s</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-base">
-                    <li><a class="text-button-color">Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (2).png" alt="">
+                  <p>20</p>
                 </div>
-                <div class="navbar-end gap-2">
-                  <img src="Images/Frame.png" alt="">
-                  <div class="">
-                    <a class="btn  btn-primary bg-button-color py-4 px-6">Get Ticket</a>
-                  </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (3).png" alt="">
+                  <p>200</p>
+
                 </div>
               </div>
-        </nav>
 
-          <!-- banner section -->
-          <section class="md:container mx-auto px-10 lg:px-36">
-            <div class="carousel w-full">
-              <div id="slide1" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide4" class="btn btn-circle">❮</a> 
-                  <a href="#slide2" class="btn btn-circle">❯</a>
+
+              <h2 class="text-2xl text-black font-extrabold">World Cup Flags Football</h2>
+              <p>The 2026 FIFA World Cup, marketed as FIFA World Cup <br> 26,will be the 23rd FIFA World Cup</p>
+              <div class="gap-4 flex">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="items-center gap-2 flex">
+                  <img src="Images/Frame (4).png" alt="">
+                  <p>Delivery Fee : Free</p>
                 </div>
-              </div> 
-              <div id="slide2" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide1" class="btn btn-circle">❮</a> 
-                  <a href="#slide3" class="btn btn-circle">❯</a>
+
+              </div>
+
+            </div>
+            <div class="flex items-center flex-col lg:flex-row gap-5">
+              <div>
+                <img src="Images/6.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <div class="flex gap-4">
+                  <div class=" items-center flex gap-2">
+                    <img class="text-[#F99808]" src="Images/Frame (1).png" alt="">
+                    <p>5.0</p>
+                  </div>
                 </div>
-              </div> 
-              <div id="slide3" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide2" class="btn btn-circle">❮</a> 
-                  <a href="#slide4" class="btn btn-circle">❯</a>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (2).png" alt="">
+                  <p>20</p>
                 </div>
-              </div> 
-              <div id="slide4" class="carousel-item relative w-full">
-                <img src="Images/1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide3" class="btn btn-circle">❮</a> 
-                  <a href="#slide1" class="btn btn-circle">❯</a>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (3).png" alt="">
+                  <p>200</p>
+
                 </div>
+              </div>
+
+
+              <h2 class="text-2xl text-black font-extrabold">World Cup Flags Football</h2>
+              <p>The 2026 FIFA World Cup, marketed as FIFA World Cup <br> 26,will be the 23rd FIFA World Cup</p>
+              <div class="gap-4 flex">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="items-center gap-2 flex">
+                  <img src="Images/Frame (4).png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="flex items-center flex-col lg:flex-row gap-5">
+              <div>
+                <img src="Images/7.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <div class="flex gap-4">
+                  <div class=" items-center flex gap-2">
+                    <img class="text-[#F99808]" src="Images/Frame (1).png" alt="">
+                    <p>5.0</p>
+                  </div>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (2).png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (3).png" alt="">
+                  <p>200</p>
+
+                </div>
+              </div>
+
+
+              <h2 class="text-2xl text-black font-extrabold">World Cup Flags Football</h2>
+              <p>The 2026 FIFA World Cup, marketed as FIFA World Cup <br> 26,will be the 23rd FIFA World Cup</p>
+              <div class="gap-4 flex">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="items-center gap-2 flex">
+                  <img src="Images/Frame (4).png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="flex items-center flex-col lg:flex-row gap-5">
+              <div>
+                <img src="Images/8.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <div class="flex gap-4">
+                  <div class=" items-center flex gap-2">
+                    <img class="text-[#F99808]" src="Images/Frame (1).png" alt="">
+                    <p>5.0</p>
+                  </div>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (2).png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (3).png" alt="">
+                  <p>200</p>
+
+                </div>
+              </div>
+
+
+              <h2 class="text-2xl text-black font-extrabold">World Cup Flags Football</h2>
+              <p>The 2026 FIFA World Cup, marketed as FIFA World Cup <br> 26,will be the 23rd FIFA World Cup</p>
+              <div class="flex gap-4">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="items-center gap-2 flex">
+                  <img src="Images/Frame (4).png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="flex items-center flex-col lg:flex-row gap-5">
+              <div>
+                <img src="Images/9.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <div class="flex gap-4">
+                  <div class=" items-center flex gap-2">
+                    <img class="text-[#F99808]" src="Images/Frame (1).png" alt="">
+                    <p>5.0</p>
+                  </div>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (2).png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (3).png" alt="">
+                  <p>200</p>
+
+                </div>
+              </div>
+
+
+              <h2 class="text-2xl text-black font-extrabold">World Cup Flags Football</h2>
+              <p>The 2026 FIFA World Cup, marketed as FIFA World Cup <br> 26,will be the 23rd FIFA World Cup</p>
+              <div class="gap-4 flex">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="items-center gap-2 flex">
+                  <img src="Images/Frame (4).png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="flex items-center flex-col lg:flex-row gap-3">
+              <div>
+                <img src="Images/10.png" alt="">
+              </div>
+              <div class="space-y-2">
+                <div class="flex gap-4">
+                  <div class=" items-center flex gap-2">
+                    <img class="text-[#F99808]" src="Images/Frame (1).png" alt="">
+                    <p>5.0</p>
+                  </div>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (2).png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="items-center flex gap-2">
+                  <img src="Images/Frame (3).png" alt="">
+                  <p>200</p>
+
+                </div>
+              </div>
+
+
+              <h2 class="text-2xl text-black font-extrabold">World Cup Flags Football</h2>
+              <p>The 2026 FIFA World Cup, marketed as FIFA World Cup <br> 26,will be the 23rd FIFA World Cup</p>
+              <div class="gap-4 flex">
+                <p class="text-[#FF4240]">Price - $22.00</p>
+                <div class="items-center gap-2 flex">
+                  <img src="Images/Frame (4).png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+
+              </div>
+
+            </div>
+            
+          </div>
+
+        </section>
+
+
+        <!-- Clients Question -->
+        <section class="container mx-auto lg:px-24 border-2 bg-white">
+          
+          <div class="text-center space-y-5 mb-6">
+            <h2 class="font-extrabold text-3xl text-black">Clients Question</h2>
+            <p class="">Hockey is played with a curved stick in the <br> form of the letter ‘J’</p>
+          </div>
+
+          <div class="bg-white hero">
+            <div class="hero-content  flex-col lg:flex-row">
+              <img class="max-w-sm rounded-lg shadow-2xl" src="Images/11.png" alt="">
+            </div> 
+
+
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Our Equipment
+              </div>
+              <div class="collapse-content"> 
+                <p>Hockey stick and ball are the most important equipment without which the sport cannot be played</p>
               </div>
             </div>
-          </section>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>I’ve been training hockey players for over ten years now.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </section>
+
+  </main>
+  <footer class="footer bg-[#131318] text-white p-10 bg-base-200
+  text-base-content">
+    <aside>
+
+      <h3 class="text-white text-3xl font-extrabold mb-6">Get In Touch</h3>
+       <p  class="text-xl">Please get in touch with me,</p>
+
+       <div class="items-center ">
+        <img class="text-button-color" src="Images/Frame (5).png" alt="">
+        <p class=" text-white">hockeys@support.com</p>
+        <img src="Images/Frame (6).png" alt="">
+        <p>(+62) 123-321-543</p>
+       </div>
          
-          
-
-    </header>
+    </aside> 
     
-    <main>
 
-    </main>
+    
+
+    <nav class="">
+      <header class="footer-title  ">Company</header>   
+      <a class="link link-hover pt-3">Leadership</a>
+      <a class="link link-hover">Careers</a>
+      <a class="link link-hover">News & Article</a>
+      <a class="link link-hover"> Legal Notice</a>
+    </nav> 
+    <nav>
+      <header class="footer-title">Support </header> 
+      <a class="link link-hover pt-3">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket Support </a>
+      <a class="link link-hover">Contact Us</a>
+    </nav> 
+    <nav>
+      <header class="footer-title text-[#FFFFFF]">Service</header>  
+      <a class="link link-hover">Academy</a>
+      <a class="link link-hover">Group Lesson</a>
+      <a class="link link-hover"> Hockeys for kids </a>
+      <a class="link link-hover"> Hockeys for Adult</a>
+      
+    </nav>
+  </footer>
     
 </body>
 </html>
